@@ -1,0 +1,26 @@
+.slideshow-block {
+    .slideshow-field {
+        .slideshow-field-wrapper {
+            position: relative;
+
+            .slideshow-field__field-image {
+                img {
+                    display: block;
+                }
+            }
+
+            .slideshow-field__field-content {
+                @include absolute-align(center,center);
+
+                p {
+                    color: #ffffff;
+                    font-size: 3.5em;
+                    @include rwd-coding(font-size,3.5em,3em,1.9em,1.5em);
+                    //font-weight: bold;
+                    margin: 0;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+#header {
+    position: absolute;
+    display: block;
+    @include rwd-screen(small-pad,phone) {
+        position: relative;
+        background: #2B343F;
+    }
+    width: 100%;
+    border-top: 10px solid #84BC23;
+    z-index: 10;
+}

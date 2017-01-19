@@ -1,0 +1,48 @@
+.article-list-block_article-list-block_04 {
+    width: 100%;
+    @include child-margin(40px);
+
+    .article-list-block-wrapper {
+        .article-block-header {
+          display: none;
+            .article-block-title {
+
+            }
+        }
+
+        .article-block-content {}
+
+        .article-block-footer {}
+    }
+
+    .node{
+      .field__item.field-title{
+        display: none;
+      }
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            display: flex;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .list-margin {
+        @include child-margin(0px);
+    }
+
+    .field-margin {
+        @include child-margin(7px);
+    }
+}

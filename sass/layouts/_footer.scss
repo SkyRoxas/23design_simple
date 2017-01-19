@@ -1,0 +1,17 @@
+#footer{
+  @include rwd-screen(small-pad,phone){
+    display: none;
+  }
+  background: #191919;
+  box-sizing: border-box;
+  .footer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1488px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

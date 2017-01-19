@@ -1,0 +1,16 @@
+.banner-block_front-banner-block{
+  position: relative;
+  .banner-field{
+    .banner-field-wrapper{
+      .banner-field__item.field-body{
+        @include absolute-align(center,center);
+        p{
+          color: #ffffff;
+          text-align: center;
+          font-size: 3em;
+          @include rwd-coding(font-size,3em,3em,1.9em,1.5em);
+        }
+      }
+    }
+  }
+}

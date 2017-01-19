@@ -1,0 +1,25 @@
+#page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    #content {
+        > .block {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            box-sizing: border-box;
+            @include rwd-screen(pc,pad) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            @include rwd-screen(small-pad,phone) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .banner-block_front-banner-block{
+          padding: 0px;
+        }
+        .article-list-block_article-list-block_04{
+          padding: 0px;
+        }
+    }
+}

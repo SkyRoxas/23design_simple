@@ -1,0 +1,46 @@
+.article-list-block_article-list-block_02 {
+    display: block;
+    width: 100%;
+    max-width: 1488px;
+    margin: 0 auto;
+    @include child-margin(30px);
+
+    .article-block-header {
+        .article-block-title {
+            text-align: center;
+
+            span {
+                font-size: 2em;
+                font-weight: bold;
+                color: #C9D766;
+            }
+        }
+    }
+
+    .article-block-content {}
+
+    .article-block-footer {}
+
+    ul {
+        margin: 0;
+        li {
+            display: block;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        display: block;
+    }
+
+    .list-margin {
+        @include child-margin(20px);
+    }
+
+    .field-margin {
+        @include child-margin(15px);
+    }
+}

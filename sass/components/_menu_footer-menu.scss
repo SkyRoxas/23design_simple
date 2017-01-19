@@ -1,0 +1,32 @@
+.menu_footer-menu {
+    display: block;
+    max-width: 720px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 0px;
+
+    .block-wrapper {
+        @include child-margin(15px,10px);
+
+        ul.menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            li.menu__item {
+                display: block;
+
+                a.menu__link {
+                    color: #FFFFFD;
+                    font-size: 1.5em;
+                    display: block;
+                    white-space: nowrap;
+                }
+
+            }
+        }
+    }
+    #logo {
+        max-width: 215px;
+    }
+}

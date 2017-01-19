@@ -1,0 +1,60 @@
+.rotate-menu-nav {
+    position: fixed;
+    z-index: 10;
+    top: 45px;
+    left: 20px;
+
+    .rotate-menu-nav_button {
+        display: block;
+        // width: 30px;
+        // height: 30px;
+        padding: 10px;
+        background: rgba(0,0,0,0.2);
+        color: #ffffff;
+        font-size: 30px;
+    }
+}
+
+.rotate-menu {
+    background: #2B343F;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.rotate-body{
+  background: #ffffff;
+}
+
+.rotate-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//rotate effect
+.rotate-menu {
+    transform: rotateY(-180deg) translateZ(0);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.rotate_front {
+    transform: rotateY(0deg) translateZ(0);
+    transform: perspective(2000px);
+    opacity: 1;
+}
+////rotate body
+.rotate-body {
+    transform: rotateY(0deg) translateZ(0);
+    transform: perspective(2000px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 0.8s;
+    opacity: 1;
+}
+
+.rotate_back {
+    transform: rotateY(180deg) translateZ(0);
+    opacity: 0;
+}
