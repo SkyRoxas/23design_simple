@@ -47,6 +47,8 @@
 }
 
 .menu_main-menu.responsive {
+  position: relative;
+  z-index: 100;
     display: block;
     padding: 40px;
     max-width: 1440px;
