@@ -44,13 +44,13 @@
 
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
-    transform: perspective(2000px);
+    //transform: perspective(2000px);
     opacity: 1;
 }
 ////rotate body
 .rotate-body {
     transform: rotateY(0deg) translateZ(0);
-    transform: perspective(2000px);
+    //transform: perspective(2000px);
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 0.8s;
