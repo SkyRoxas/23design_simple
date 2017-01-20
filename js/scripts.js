@@ -14,20 +14,17 @@ $.fn.rotate_menu = function($settings) {
     $('.rotate-menu').before('<div class ="rotate-menu-nav"><div class ="rotate-menu-nav_button">☰</div></div>');
 
     //add rotate effect style
-    var display;
     $('.rotate-menu-nav').click(function() {
         $('.rotate-body').toggleClass('rotate_back');
         $('.rotate-menu').toggleClass('rotate_front');
 
         setTimeout(function() {
-            $('.rotate-body').toggle(display);
+              $('.rotate-body').addClass('rotate-menu-visibility');
         }, 300);
 
-        if (display == true) {
-            $('.rotate-body').hide();
-        } else if (display == false) {
-            $('.rotate-body').show();
-        }
+        setTimeout(function() {
+              $('.rotate-body').removeClass('rotate-menu-visibility');
+        }, 500);
 
     })
     if ($settings.navHtml !== null) {
