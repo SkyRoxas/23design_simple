@@ -2,6 +2,16 @@
   z-index: 500;
 }
 
+@-moz-keyframes hidden {
+    0% {
+      opacity: 0;
+    }
+
+    5% {
+    opacity: 1;
+    }
+  }
+
 .rotate-menu-nav {
     position: fixed;
     z-index: 550;
@@ -60,10 +70,10 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 0.8s;
-    opacity: 1;
 }
 
 .rotate_back {
     transform: rotateY(180deg) translateZ(0);
-    opacity: 0;
+    animation-duration: 0.6s;
+    animation-name:hidden;
 }
