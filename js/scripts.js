@@ -32,7 +32,7 @@ $.fn.rotate_menu = function($settings) {
               setTimeout(function() {
                   $('.rotate-menu').show();
               }, 10);
-          }, 250);
+          }, 500);
         }
 
     })
