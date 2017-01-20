@@ -17,6 +17,9 @@ $.fn.rotate_menu = function($settings) {
     $('.rotate-menu-nav').click(function() {
         $('.rotate-body').toggleClass('rotate_back');
         $('.rotate-menu').toggleClass('rotate_front');
+        setTimeout(function(){
+          $('.rotate-menu').toggleClass('rotate-menu-index');
+        },800);
     })
     if ($settings.navHtml !== null) {
         $('.rotate-menu-nav').html($settings.navHtml);
