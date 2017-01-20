@@ -1,11 +1,10 @@
 .menu_main-menu:not(.responsive) {
     display: block;
-
-    @include rwd-screen(pc,pad){
+    @include rwd-screen(pc,pad) {
         padding: 40px;
     }
-    @include rwd-screen(small-pad,phone){
-        padding: 30px 15px 15px 15px;
+    @include rwd-screen(small-pad,phone) {
+        padding: 30px 15px 15px;
     }
     max-width: 1440px;
     margin: 0 auto;
@@ -14,11 +13,10 @@
         ul.menu {
             display: flex;
             align-items: center;
-
-            @include rwd-screen(pc,pad){
+            @include rwd-screen(pc,pad) {
                 justify-content: space-between;
             }
-            @include rwd-screen(small-pad,phone){
+            @include rwd-screen(small-pad,phone) {
                 justify-content: center;
             }
 
@@ -47,7 +45,7 @@
 }
 
 .menu_main-menu.responsive {
-  position: relative;
+    position: relative;
     display: block;
     padding: 40px;
     max-width: 1440px;
@@ -83,8 +81,8 @@
     }
 }
 
-.rotate-menu-nav_button{
-  @include rwd-screen(pc,pad){
-    //display: none!important;
-  }
+.rotate-menu-nav_button {
+    @include rwd-screen(pc,pad) {
+        //display: none!important;
+    }
 }

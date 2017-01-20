@@ -19,7 +19,7 @@ $.fn.rotate_menu = function($settings) {
         $('.rotate-menu').toggleClass('rotate_front');
 
         setTimeout(function() {
-            $('.rotate-menu').toggleClass('rotate-menu-visibility');
+            $('.rotate-body').toggleClass('rotate-menu-visibility');
         }, 10000);
     })
     if ($settings.navHtml !== null) {
