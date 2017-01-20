@@ -25,7 +25,7 @@ $.fn.rotate_menu = function($settings) {
                 setTimeout(function() {
                     $('.rotate-body').show();
                 }, 10);
-            }, 950);
+            }, 900);
         }
 
     })
