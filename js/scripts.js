@@ -26,6 +26,13 @@ $.fn.rotate_menu = function($settings) {
                     $('.rotate-body').show();
                 }, 10);
             }, 250);
+        }else{
+          setTimeout(function() {
+              $('.rotate-menu').hide();
+              setTimeout(function() {
+                  $('.rotate-menu').show();
+              }, 10);
+          }, 250);
         }
 
     })
