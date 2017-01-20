@@ -20,7 +20,7 @@ $.fn.rotate_menu = function($settings) {
 
         setTimeout(function() {
             $('.rotate-menu').toggleClass('rotate-menu-visibility');
-        }, 800);
+        }, 10000);
     })
     if ($settings.navHtml !== null) {
         $('.rotate-menu-nav').html($settings.navHtml);
