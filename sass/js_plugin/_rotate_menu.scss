@@ -39,19 +39,12 @@
     backface-visibility: hidden;
     transition: 1s;
     visibility: hidden;
-    >div{
-      transition: 0.5s;
-      opacity: 0;
-    }
 }
 
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
     transform: perspective(7000px);
     visibility: visible;
-    >div{
-      opacity: 1;
-    }
 }
 ////rotate body
 
