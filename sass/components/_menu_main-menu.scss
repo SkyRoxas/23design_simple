@@ -85,6 +85,6 @@
 
 .rotate-menu-nav_button{
   @include rwd-screen(pc,pad){
-    display: none!important;
+    //display: none!important;
   }
 }

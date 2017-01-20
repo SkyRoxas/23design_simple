@@ -2,15 +2,18 @@
   z-index: 500;
 }
 
-@-moz-keyframes hidden {
-    0% {
-      opacity: 0;
-    }
-
-    5% {
+@keyframes opahidden {
+  0% {
     opacity: 1;
-    }
   }
+  30% {
+    opacity: 0;
+  }
+}
+
+p {
+
+}
 
 .rotate-menu-nav {
     position: fixed;
@@ -54,13 +57,13 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 0.8s;
-    opacity: 0;
+    //opacity: 0;
 }
 
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
     transform: perspective(2000px);
-    opacity: 1;
+    //opacity: 1;
 }
 ////rotate body
 
@@ -74,6 +77,5 @@
 
 .rotate_back {
     transform: rotateY(180deg) translateZ(0);
-    animation-duration: 0.6s;
-    animation-name:hidden;
+     animation: opahidden 0.6s;
 }
