@@ -3,8 +3,6 @@ $.fn.rotate_menu = function($settings) {
     //navAddClass['buttonClass','button_event_addClass'] // you can add class for nav button for [buttonClass,button_event_addClass]
     //navHtml //your settine your navbutton html
     //menuAddClass //addClass for your menu block
-    //console.log($(this));
-    //console.log($settings.navAddClass);
 
 
     //mack wrapper for my rotate-menu
@@ -19,17 +17,15 @@ $.fn.rotate_menu = function($settings) {
         $('.rotate-body').toggleClass('rotate_back');
         $('.rotate-menu').toggleClass('rotate_front');
 
+        //對 ios 行動裝置閃爍進行防呆
         clickTime += 1;
-
         if (clickTime % 2 != 1) {
             setTimeout(function() {
                 $('.rotate-body').hide();
                 setTimeout(function() {
                     $('.rotate-body').show();
                 }, 10);
-            }, 300);
-        }else {
-          //console.log(1);
+            }, 400);
         }
 
     })
@@ -51,8 +47,6 @@ $.fn.rotate_menu = function($settings) {
 
 
 (function($) {
-
-
     $(document).ready(function() {
         $('.menu_main-menu').rotate_menu({
             navAddClass: ['test,test2'],

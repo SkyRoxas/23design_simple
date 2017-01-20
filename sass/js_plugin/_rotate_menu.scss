@@ -39,23 +39,23 @@
     transform: rotateY(-180deg) translateZ(0);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    transition: 0.8s;
+    transition: 1s;
     visibility: hidden;
 }
 
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
-    transform: perspective(2000px);
+    transform: perspective(7000px);
     visibility: visible;
 }
 ////rotate body
 
 .rotate-body {
     transform: rotateY(0deg) translateZ(0);
-    transform: perspective(2000px);
+    transform: perspective(7000px);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    transition: 0.8s;
+    transition: 1s;
 }
 
 .rotate_back {
