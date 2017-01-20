@@ -1,6 +1,10 @@
 .rotate-menu-index {
     z-index: 500;
 }
+.rotate-menu-hidden{
+  transform: none;
+  opacity: 0;
+}
 
 .rotate-menu-nav {
     position: fixed;
