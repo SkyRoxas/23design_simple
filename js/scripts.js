@@ -14,13 +14,20 @@ $.fn.rotate_menu = function($settings) {
     $('.rotate-menu').before('<div class ="rotate-menu-nav"><div class ="rotate-menu-nav_button">☰</div></div>');
 
     //add rotate effect style
+    var display;
     $('.rotate-menu-nav').click(function() {
         $('.rotate-body').toggleClass('rotate_back');
         $('.rotate-menu').toggleClass('rotate_front');
 
         setTimeout(function() {
-        $('.rotate-body').hide();
-      }, 300);
+            $('.rotate-body').toggle(display);
+        }, 300);
+
+        if (display == true) {
+            $('.rotate-body').hide();
+        } else if (display == false) {
+            $('.rotate-body').show();
+        }
 
     })
     if ($settings.navHtml !== null) {
