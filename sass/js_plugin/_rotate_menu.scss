@@ -1,5 +1,5 @@
-.rotate-menu-index{
-  z-index: 500;
+.rotate-menu-index {
+    z-index: 500;
 }
 
 .rotate-menu-nav {
@@ -50,7 +50,7 @@
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
     transform: perspective(2000px);
-    opacity: 1;
+    //opacity: 1;
 }
 ////rotate body
 
@@ -65,5 +65,5 @@
 
 .rotate_back {
     transform: rotateY(180deg) translateZ(0);
-    opacity: 0;
+    //opacity: 0;
 }
