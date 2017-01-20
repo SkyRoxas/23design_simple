@@ -1,7 +1,3 @@
-.rotate-menu-visibility {
-    visibility: hidden;
-}
-
 .rotate-menu-nav {
     position: fixed;
     z-index: 550;
@@ -35,18 +31,27 @@
 }
 //rotate effect
 
+
+
 .rotate-menu {
     transform: rotateY(-180deg) translateZ(0);
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 1s;
     visibility: hidden;
+    >div{
+      transition: 1s;
+      opacity: 0;
+    }
 }
 
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
     transform: perspective(7000px);
     visibility: visible;
+    >div{
+      opacity: 1;
+    }
 }
 ////rotate body
 
