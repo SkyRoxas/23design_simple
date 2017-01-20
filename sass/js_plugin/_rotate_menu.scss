@@ -1,5 +1,5 @@
-.rotate-menu-visibility{
-  visibility: hidden;
+.rotate-menu-visibility {
+    visibility: hidden;
 }
 
 .rotate-menu-nav {
@@ -40,13 +40,13 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 0.8s;
-
+    visibility: hidden;
 }
 
 .rotate_front {
     transform: rotateY(0deg) translateZ(0);
     transform: perspective(2000px);
-
+    visibility: visible;
 }
 ////rotate body
 
@@ -56,9 +56,9 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 0.8s;
-
 }
 
 .rotate_back {
     transform: rotateY(180deg) translateZ(0);
+    visibility: hidden;
 }
