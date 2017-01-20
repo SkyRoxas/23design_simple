@@ -21,6 +21,10 @@ $.fn.rotate_menu = function($settings) {
           $('.rotate-body').hide();
           $('.rotate-menu').toggleClass('rotate-menu-index');
         },800);
+        setTimeout(function(){
+          $('.rotate-body').hide();
+          $('.rotate-menu').toggleClass('rotate-menu-index');
+        },850);
     })
     if ($settings.navHtml !== null) {
         $('.rotate-menu-nav').html($settings.navHtml);
