@@ -22,7 +22,7 @@ $.fn.rotate_menu = function($settings) {
         },800);
         setTimeout(function(){
           $('.rotate-menu').toggleClass('rotate-menu-index');
-        },1050);
+        },10000);
     })
     if ($settings.navHtml !== null) {
         $('.rotate-menu-nav').html($settings.navHtml);
