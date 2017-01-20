@@ -18,9 +18,10 @@ $.fn.rotate_menu = function($settings) {
         $('.rotate-body').toggleClass('rotate_back');
         $('.rotate-menu').toggleClass('rotate_front');
 
-        // setTimeout(function() {
-        //     $('.rotate-body').toggleClass('rotate-menu-visibility');
-        // }, 10000);
+        setTimeout(function() {
+        $('.rotate-body').hide();
+      }, 300);
+
     })
     if ($settings.navHtml !== null) {
         $('.rotate-menu-nav').html($settings.navHtml);
