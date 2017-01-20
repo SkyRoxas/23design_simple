@@ -11,9 +11,6 @@
   }
 }
 
-p {
-
-}
 
 .rotate-menu-nav {
     position: fixed;
@@ -73,9 +70,9 @@ p {
     transform-style: preserve-3d;
     backface-visibility: hidden;
     transition: 0.8s;
+
 }
 
 .rotate_back {
     transform: rotateY(180deg) translateZ(0);
-     animation: opahidden 0.6s;
 }

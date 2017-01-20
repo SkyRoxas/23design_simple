@@ -18,8 +18,8 @@ $.fn.rotate_menu = function($settings) {
         $('.rotate-body').toggleClass('rotate_back');
         $('.rotate-menu').toggleClass('rotate_front');
         setTimeout(function(){
+          $('.rotate-body').hide();
           $('.rotate-menu').toggleClass('rotate-menu-index');
-
         },800);
     })
     if ($settings.navHtml !== null) {
